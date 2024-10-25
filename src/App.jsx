@@ -17,7 +17,7 @@ export default function App() {
 
   const getCategories = async () => {
     try {
-      const res = await axios.get(server + "/categories");
+      const res = await axios.get("https://buchkosmos.de/rest/categories");
       console.log(res.headers["set-cookie"]);
       const AllCategories = res.data.items;
       const filteredCategories = AllCategories.filter((c) => {
