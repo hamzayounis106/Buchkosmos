@@ -18,7 +18,7 @@ export default function App() {
   const getCategories = async () => {
     try {
       const res = await axios.get("https://buchkosmos.de/rest/categories");
-      console.log(res.headers["set-cookie"]);
+      // console.log(res.headers["set-cookie"]);
       const AllCategories = res.data.items;
       const filteredCategories = AllCategories.filter((c) => {
         return c.id !== "848" && c.id !== "837" && c.id !== "838";
@@ -35,11 +35,11 @@ export default function App() {
     try {
       // Get all cookies
       const allCookies = Cookies.get();
-      console.log("All Cookies:", allCookies);
+      // console.log("All Cookies:", allCookies);
 
       // Get specific cookie value
       const tokenValue = Cookies.get("XSRF-TOKEN");
-      console.log("XSRF-TOKEN Cookie Value:", tokenValue);
+      // console.log("XSRF-TOKEN Cookie Value:", tokenValue);
       setToken(tokenValue);
     } catch (error) {
       console.log(error);
