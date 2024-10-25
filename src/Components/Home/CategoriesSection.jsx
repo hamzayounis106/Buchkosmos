@@ -3,7 +3,7 @@ import SingleCategory from "./SingleCategory";
 import { FictionCategoriesContext } from "../../App";
 export default function CategoriesSection() {
 const fictionCategories = useContext(FictionCategoriesContext)
-console.log(fictionCategories)
+// console.log(fictionCategories)
   const nonFiction = [
     { id: 848, category: "Literatur & Romane allgemein", currentBookAmount: 7 },
     { id: 837, category: "Science Fiction & Fantasy", currentBookAmount: 29 },

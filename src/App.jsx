@@ -39,7 +39,7 @@ export default function App() {
 
       // Get specific cookie value
       const tokenValue = Cookies.get("XSRF-TOKEN");
-      // console.log("XSRF-TOKEN Cookie Value:", tokenValue);
+      console.log("XSRF-TOKEN Cookie Value:", tokenValue);
       setToken(tokenValue);
     } catch (error) {
       console.log(error);
